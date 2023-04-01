@@ -65,7 +65,7 @@ ensure_dcontainer dcontainer_location
 $dcontainer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers/features/java:1.1.1" \
+    "ghcr.io/braechnov/features/java:1.2.7" \
     --option jdkDistro="$JDKDISTRO" --option version="$JDKVERSION"
 
 

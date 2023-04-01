@@ -1,6 +1,6 @@
 {
     "id": "quarkus-sdkman",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Quarkus CLI (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/quarkus-sdkman",
     "description": "Quarkus is a Kubernetes Native Java framework tailored for OpenJDK HotSpot and\nGraalVM, crafted from best-of-breed Java libraries and standards.",
@@ -14,12 +14,12 @@
             "type": "string"
         },
         "jdkVersion": {
-            "default": "22.3.1.r17",
+            "default": "22",
             "description": "Select or enter a JDK version to install.",
             "proposals": [
                 "latest",
                 "none",
-                "22.3.1.r17",
+                "22",
                 "17",
                 "11",
                 "8"
@@ -45,7 +45,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/braechnov/features/java:1.2.2",
+            "feature": "ghcr.io/braechnov/features/java:1.2.7",
             "options": {
                 "jdkDistro": "$options.jdkDistro",
                 "version": "$options.jdkVersion"
